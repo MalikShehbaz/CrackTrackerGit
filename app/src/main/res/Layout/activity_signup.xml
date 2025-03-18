@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <!-- Gradient Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:background="@drawable/gradient_background"
+        android:orientation="vertical">
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:src="@drawable/CameraLogo" />
+
+        <!-- App Name -->
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RoadCompanion"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Tagline -->
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your trusted road partner"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <!-- Create Account Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Create an Account"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
+
+    <!-- Username Input Field -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Username"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="enter the name"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <!-- Email Input Field -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="e.g john@gmail.com"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:inputType="textEmailAddress"/>
+
+    <!-- Password Input Field -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Password"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text_border">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="enter the password"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/showPasswordIcon"/>
+
+        <ImageView
+            android:id="@+id/showPasswordIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_visibility"/>
+    </RelativeLayout>
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_border"
+        android:padding="15dp"
+        android:text="SIGN UP"
+        android:textColor="#FF9800"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/white"
+    android:padding="20dp">
+
+    <!-- Illustration Image -->
+    <ImageView
+        android:id="@+id/illustrationImage"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:src="@drawable/road_illustration"
+        android:contentDescription="Illustration of a safe road journey"
+        android:scaleType="fitCenter" />
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Have a safe Path"
+        android:textColor="#333333"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Subtitle / Tagline -->
+    <TextView
+        android:id="@+id/subtitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your trusted road partner"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_marginTop="5dp" />
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Create Account Button -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/createAccountButton"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="CREATE ACCOUNT"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:gravity="center" />
+
+        <!-- Gear Icon on Button -->
+        <ImageView
+            android:id="@+id/gearIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@id/createAccountButton"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_gear"
+            android:contentDescription="Gear Icon" />
+    </RelativeLayout>
+
+</LinearLayout>

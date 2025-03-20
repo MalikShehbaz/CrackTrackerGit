@@ -19,7 +19,11 @@
             android:id="@+id/appLogo"
             android:layout_width="200dp"
             android:layout_height="60dp"
-            android:src="@drawable/CameraLogo" />
+            android:src="@drawable/camera_logo"
+            android:background="@drawable/button_background"
+            android:padding="2dp"
+            android:scaleType="fitCenter"/>
+
 
         <!-- App Name -->
         <TextView
@@ -61,7 +65,9 @@
         android:layout_marginTop="20dp"
         android:text="Username"
         android:textColor="@color/black"
-        android:textSize="14sp"/>
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
 
     <EditText
         android:id="@+id/username"
@@ -80,7 +86,8 @@
         android:layout_marginTop="15dp"
         android:text="Email"
         android:textColor="@color/black"
-        android:textSize="14sp"/>
+        android:textSize="14sp"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/email"
@@ -100,7 +107,8 @@
         android:layout_marginTop="15dp"
         android:text="Password"
         android:textColor="@color/black"
-        android:textSize="14sp"/>
+        android:textSize="14sp"
+        android:textStyle="bold"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -117,16 +125,17 @@
             android:textSize="14sp"
             android:inputType="textPassword"
             android:layout_alignParentStart="true"
-            android:layout_toStartOf="@id/showPasswordIcon"/>
+            />
 
-        <ImageView
-            android:id="@+id/showPasswordIcon"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/ic_visibility"/>
+<!--        <ImageView-->
+<!--            android:id="@+id/showPasswordIcon"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:src="@drawable/ic_visibility"-->
+<!--            />-->
     </RelativeLayout>
 
     <!-- Sign Up Button -->
@@ -136,11 +145,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
         android:layout_gravity="center"
-        android:background="@drawable/button_border"
+        android:background="@drawable/button_background"
         android:padding="15dp"
         android:text="SIGN UP"
-        android:textColor="#FF9800"
+        android:textColor="#000000"
         android:textSize="16sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+    />
+
+
+
+
 
 </LinearLayout>

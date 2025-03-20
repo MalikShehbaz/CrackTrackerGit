@@ -18,7 +18,7 @@
         android:layout_height="100dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
-        android:src="@drawable/CameraLogo" />
+        android:src="@drawable/camera_logo" />
 
     <!-- App Name -->
     <TextView

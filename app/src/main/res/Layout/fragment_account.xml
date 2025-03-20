@@ -8,15 +8,16 @@
     android:padding="20dp">
 
     <!-- Illustration Image -->
+
+    <!-- Title Text -->
     <ImageView
         android:id="@+id/illustrationImage"
         android:layout_width="250dp"
         android:layout_height="200dp"
-        android:src="@drawable/road_illustration"
         android:contentDescription="Illustration of a safe road journey"
-        android:scaleType="fitCenter" />
+        android:scaleType="fitCenter"
+        android:src="@drawable/road_interface" />
 
-    <!-- Title Text -->
     <TextView
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
@@ -44,34 +45,51 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+
+        />
 
     <!-- Create Account Button -->
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/createAccountButton"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:text="CREATE ACCOUNT"
-            android:textColor="@android:color/white"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            android:background="@drawable/button_background"
-            android:gravity="center" />
-
-        <!-- Gear Icon on Button -->
-        <ImageView
-            android:id="@+id/gearIcon"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_alignEnd="@id/createAccountButton"
-            android:layout_marginEnd="10dp"
-            android:layout_centerVertical="true"
-            android:src="@drawable/ic_gear"
-            android:contentDescription="Gear Icon" />
+        <!-- Home Button -->
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:text="CREATE ACCOUNT"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/orText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/goToHomeButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:padding="3dp"
+        android:text="GO HOME"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

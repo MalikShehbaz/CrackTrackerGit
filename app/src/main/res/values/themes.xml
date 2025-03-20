@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.CrackTracker" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- Use AppCompat theme to avoid runtime crash -->
+    <style name="Theme.CrackTracker" parent="Theme.AppCompat.Light.NoActionBar" />
+
 </resources>

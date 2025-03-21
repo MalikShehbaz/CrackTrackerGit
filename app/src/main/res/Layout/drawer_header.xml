@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_500"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <!-- Circular Profile Image -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_profile"
+        android:scaleType="centerCrop"
+        android:padding="5dp"
+        android:elevation="5dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="Profile Image" />
+
+    <!-- User Name -->
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+    <!-- User Email -->
+    <TextView
+        android:id="@+id/userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="johndoe@email.com"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>

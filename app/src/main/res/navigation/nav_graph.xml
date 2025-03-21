@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.cracktracker.HomeFragment"
+        android:name="com.example.cracktracker.FragmentHome"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
 </navigation>

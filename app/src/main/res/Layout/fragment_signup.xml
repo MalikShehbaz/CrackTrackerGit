@@ -17,10 +17,9 @@
         <!-- App Logo -->
         <ImageView
             android:id="@+id/appLogo"
-            android:layout_width="200dp"
-            android:layout_height="60dp"
+            android:layout_width="240dp"
+            android:layout_height="70dp"
             android:src="@drawable/camera_logo"
-            android:background="@drawable/button_background"
             android:padding="2dp"
             android:scaleType="fitCenter"/>
 
@@ -30,7 +29,7 @@
             android:id="@+id/appName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RoadCompanion"
+            android:text="TrackCrack"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -41,7 +40,7 @@
             android:id="@+id/tagline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your trusted road partner"
+            android:text="AI-Powered Solution"
             android:textColor="@android:color/white"
             android:textSize="14sp"
             android:textStyle="italic"/>
@@ -53,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:text="Create an Account"
+        android:text="SIGN UP"
         android:textColor="@color/black"
         android:textSize="23sp"
         android:textStyle="bold"/>
@@ -63,7 +62,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Username"
+        android:layout_marginBottom="5dp"
+        android:text="Full Name"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"/>
@@ -84,27 +84,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
         android:text="Email"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"/>
 
+    <!-- Password Input Field -->
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/edit_text_border"
         android:hint="e.g john@gmail.com"
+        android:inputType="textEmailAddress"
         android:padding="10dp"
         android:textColor="@color/black"
-        android:textSize="14sp"
-        android:inputType="textEmailAddress"/>
+        android:textSize="14sp" />
 
-    <!-- Password Input Field -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
         android:text="Password"
         android:textColor="@color/black"
         android:textSize="14sp"
@@ -127,15 +129,7 @@
             android:layout_alignParentStart="true"
             />
 
-<!--        <ImageView-->
-<!--            android:id="@+id/showPasswordIcon"-->
-<!--            android:layout_width="24dp"-->
-<!--            android:layout_height="24dp"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_centerVertical="true"-->
-<!--            android:layout_marginEnd="10dp"-->
-<!--            android:src="@drawable/ic_visibility"-->
-<!--            />-->
+
     </RelativeLayout>
 
     <!-- Sign Up Button -->
@@ -145,9 +139,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
         android:layout_gravity="center"
-        android:background="@drawable/button_background"
+        android:background="@drawable/button_border"
         android:padding="15dp"
-        android:text="SIGN UP"
+        android:text="Submit"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"

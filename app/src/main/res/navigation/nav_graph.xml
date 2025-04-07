@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/logoFragment2">
+    app:startDestination="@id/logoFragment2">  <!-- Set the start destination to homeFragment -->
+
     <fragment
         android:id="@+id/logoFragment2"
         android:name="com.example.cracktracker.LogoFragment"
@@ -12,6 +13,7 @@
             android:id="@+id/action_logoFragment_to_accountFragment"
             app:destination="@id/accountFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/accountFragment"
         android:name="com.example.cracktracker.AccountFragment"
@@ -23,6 +25,7 @@
             android:id="@+id/action_accountFragment_to_homeFragment2"
             app:destination="@id/homeFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/signupFragment"
         android:name="com.example.cracktracker.SignUpFragment"
@@ -32,9 +35,21 @@
             android:id="@+id/action_signupFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.cracktracker.FragmentHome"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <!-- This action is for navigating to settings from the home fragment -->
+        <action
+            android:id="@+id/action_homeFragment_to_user_settings"
+            app:destination="@id/user_settings" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/user_settings"
+        android:name="com.example.cracktracker.UserSettingsFragment"
+        android:label="fragment_user_settings2"
+        tools:layout="@layout/fragment_user_settings" />
 </navigation>
